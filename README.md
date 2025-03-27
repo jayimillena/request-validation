@@ -1,4 +1,4 @@
-# README.txt  
+    # README.txt  
 
 ## **Digitalized Grey Literature: Knowledge-based System for Divine Word College of Legazpi**  
 
@@ -22,7 +22,7 @@ This project aims to develop a **Knowledge-Based System** for managing **grey li
 1. Clone the repository:  
    ```sh
    git clone knowledge-based-system
-   cd digitalized-grey-literature
+   cd knowledge-based-system
    ```  
 2. Install dependencies:  
    ```sh
