@@ -17,6 +17,14 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->enum('usertype', ['admin', 'library', 'faculty', 'student', 'guest'])
+                ->default('student')
+                ->comment('
+                    admin: Admin user with full access to the system.
+                    library: Library staff with access to library management features.
+                    faculty: Faculty members with access to course and student management features.
+                    student: Students with access to their own profiles and course materials.
+                    guest: Unauthenticated users with limited access to public resources.');
             $table->rememberToken();
             $table->timestamps();
         });
